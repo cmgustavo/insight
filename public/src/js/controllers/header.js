@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('insight.system').controller('HeaderController',
-  function($scope, $rootScope, $modal, getSocket, Global, Block) {
+  function($scope, $rootScope, $modal, getSocket, Global, Block, $filter) {
     $scope.global = Global;
 
     $rootScope.currency = {
@@ -11,10 +11,10 @@ angular.module('insight.system').controller('HeaderController',
     };
 
     $scope.menu = [{
-      'title': 'Blocks',
+      'title': $filter('translate')('Blocks'),
       'link': 'blocks'
     }, {
-      'title': 'Status',
+      'title': $filter('translate')('Status'),
       'link': 'status'
     }];
 

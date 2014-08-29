@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es\n"
 
 #: public/views/404.html
 msgid "404 Page not found :("
@@ -313,6 +313,10 @@ msgstr "Bloques saltados (sincronizados previamente)"
 #: public/views/status.html
 msgid "Start Date"
 msgstr "Fecha de Inicio"
+
+#: public/views/includes/header.html
+msgid "Status"
+msgstr "Estado"
 
 #: public/views/block.html public/views/transaction.html
 msgid "Summary"
