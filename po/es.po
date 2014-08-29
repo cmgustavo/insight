@@ -1,0 +1,441 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.6.8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#: public/views/404.html
+msgid "404 Page not found :("
+msgstr "404 Página no encontrada :("
+
+#: public/views/index.html
+msgid ""
+"<strong>insight</strong>  is an <a href=\"http://live.insight.is/\" target="
+"\"_blank\">open-source Bitcoin blockchain explorer</a> with complete REST\n"
+"and websocket APIs that can be used for writing web wallets and other apps \n"
+"that need more advanced blockchain queries than provided by bitcoind RPC. \n"
+"Check out the <a href=\"http://github.com/bitpay/insight\" target=\"_blank"
+"\">source code</a>."
+msgstr ""
+"<strong>insight</strong>  es un <a href=\"http://live.insight.is/\" target="
+"\"_blank\">explorador de bloques de Bitcoins Open Source</a> con una "
+"completa API de REST\n"
+"y websocket que pueden ser usadas para escribir Billeteras Web y otras "
+"aplicaciones \n"
+"que requieran avanzadas consultas a la cadena de bloques que provee Bitcoind "
+"RPC. \n"
+"Consulte el <a href=\"http://github.com/bitpay/insight\" target=\"_blank"
+"\">código fuente</a>."
+
+#: public/views/index.html
+msgid ""
+"<strong>insight</strong> is still in development, so be sure to report any "
+"bugs and provide feedback for improvement at our <a href=\"https://github."
+"com/bitpay/insight/issues\" target=\"_blank\">github issue tracker</a>."
+msgstr ""
+"<strong>insight</strong> esta en desarrollo aún, por ello reporte cualquier "
+"error o comentario para mejorar el producto a nuestro <a href=\"https://"
+"github.com/bitpay/insight/issues\" target=\"_blank\">Github issue tracker</"
+"a>."
+
+#: public/views/index.html
+msgid "About"
+msgstr "Acerca de"
+
+#: public/views/address.html
+msgid "Address"
+msgstr "Dirección"
+
+#: public/views/index.html
+msgid "Age"
+msgstr "Edad"
+
+#: public/views/status.html
+msgid "Application Status"
+msgstr "Estado de la Aplicación"
+
+#: public/views/status.html
+msgid "Best Block"
+msgstr "Mejor Bloque"
+
+#: public/views/status.html
+msgid "Bitcoin node information"
+msgstr "Información del nodo Bitcoin"
+
+#: public/views/block.html
+msgid "Block #{{block.height}}"
+msgstr "Bloque #{{block.height}}"
+
+#: public/views/block.html
+msgid "Block Reward"
+msgstr "Recompensa"
+
+#: public/views/status.html
+msgid "Blocks"
+msgstr "Bloques"
+
+#: public/views/block_list.html
+msgid ""
+"Blocks\n"
+"          <small>by date. {{detail}} {{before}}</small>"
+msgstr ""
+"Bloques\n"
+"          <small>por fecha. {{detail}} {{before}}</small>"
+
+#: public/views/block_list.html
+msgid "Blocks <br> mined on:"
+msgstr "Bloques <br> minado el:"
+
+#: public/views/status.html
+msgid "Bytes Serialized"
+msgstr "Bytes Serializados"
+
+#: public/views/includes/connection.html
+msgid ""
+"Can't connect to bitcoind to get live updates from the p2p network.\n"
+"      (Tried connecting to bitcoind at {{host}}:{{port}} and failed.)"
+msgstr ""
+"No se puede conectar a Bitcoind para obtener las actualizaciones en vivo de "
+"la red P2P.\n"
+"      (Intento de conectar a Bitcoind con {{host}}:{{port}} falló.)"
+
+#: public/views/includes/connection.html
+msgid "Can't connect to insight server. Attempting to reconnect..."
+msgstr "No se puede conectar al servidor insight. Intentando reconectar..."
+
+#: public/views/includes/connection.html
+msgid "Can't connect to internet. Please, check your connection."
+msgstr "No se puede conectar a internet. Por favor, verifique su conexión."
+
+#: public/views/includes/header.html
+msgid "Conn"
+msgstr "Con"
+
+#: public/views/status.html
+msgid "Connections to other nodes"
+msgstr "Conexiones a otros nodos"
+
+#: public/views/status.html
+msgid "Current Blockchain Tip (insight)"
+msgstr "Actual Blockchain Tip (insight)"
+
+#: public/views/status.html
+msgid "Current Sync Status"
+msgstr "Actual Estado de Sincronización"
+
+#: public/views/transaction.html
+msgid "Details"
+msgstr "Detalles"
+
+#: public/views/block.html
+msgid "Difficulty"
+msgstr "Dificultad"
+
+#: public/views/address.html
+msgid "Final Balance"
+msgstr "Balance final"
+
+#: public/views/status.html
+msgid "Finish Date"
+msgstr "Fecha final"
+
+#: public/views/404.html
+msgid "Go to home"
+msgstr "Volver al inicio"
+
+#: public/views/status.html
+msgid "Hash Serialized"
+msgstr "Hash Serializado"
+
+#: public/views/block.html public/views/block_list.html
+#: public/views/index.html public/views/status.html
+#: public/views/includes/header.html
+msgid "Height"
+msgstr "Altura"
+
+#: public/views/transaction.html
+msgid "Included in Block"
+msgstr "Incluido en el Bloque"
+
+#: public/views/status.html
+msgid "Initial Block Chain Height"
+msgstr "Altura del Blockchain inicial"
+
+#: public/views/status.html
+msgid "Last Block"
+msgstr "Último Bloque"
+
+#: public/views/status.html
+msgid "Last Block Hash (Bitcoind)"
+msgstr "Último BlockHash (Bitcoind)"
+
+#: public/views/block_list.html
+msgid "Lastest block from date"
+msgstr "Último bloque desde"
+
+#: public/views/index.html
+msgid "Latest Blocks"
+msgstr "Últimos Bloques"
+
+#: public/views/index.html
+msgid "Latest Transactions"
+msgstr "Últimas Transacciones"
+
+#: public/views/address.html
+msgid "Loading Address Information <span class=\"loader-gif\"></span>"
+msgstr ""
+"Cargando Información de la Dirección <span class=\"loader-gif\"></span>"
+
+#: public/views/block.html
+msgid "Loading Block Information  <span class=\"loader-gif\"></span>"
+msgstr "Cargando Información del Bloque  <span class=\"loader-gif\"></span>"
+
+#: public/views/block_list.html
+msgid "Loading Selected Date..."
+msgstr "Cargando Fecha Seleccionada..."
+
+#: public/views/transaction.html
+msgid "Loading Transaction Details <span class=\"loader-gif\"></span>"
+msgstr "Cargando Detalles de la Transacción <span class=\"loader-gif\"></span>"
+
+#: public/views/transaction/list.html
+msgid "Loading Transactions..."
+msgstr "Cargando Transacciones..."
+
+#: public/views/includes/infoStatus.html
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: public/views/transaction.html
+msgid "LockTime"
+msgstr "LockTime"
+
+#: public/views/block.html
+msgid "Merkle Root"
+msgstr "Merkle Root"
+
+#: public/views/transaction.html
+msgid "Mined Time"
+msgstr "Fecha de Minado"
+
+#: public/views/block.html public/views/block_list.html
+#: public/views/index.html
+msgid "Mined by"
+msgstr "Minado por"
+
+#: public/views/status.html
+msgid "Mining Difficulty"
+msgstr "Dificultad de Minado"
+
+#: public/views/block.html
+msgid "Next Block"
+msgstr "Próximo Bloque"
+
+#: public/views/block_list.html
+msgid "No blocks yet."
+msgstr "No hay bloques aún."
+
+#: public/views/includes/header.html public/views/includes/search.html
+msgid "No matching records found!"
+msgstr "¡No se encontraron coincidencias!"
+
+#: public/views/address.html
+msgid "No. Transactions"
+msgstr "Nro. Transacciones"
+
+#: public/views/block.html
+msgid "Number Of Transactions"
+msgstr "Número de Transacciones"
+
+#: public/views/block_list.html
+msgid "Older blocks from this date"
+msgstr "Bloques más antiguos dede esta fecha"
+
+#: public/views/index.html
+msgid "Powered by"
+msgstr "Funciona con"
+
+#: public/views/block.html
+msgid "Previous Block"
+msgstr "Bloque Anterior"
+
+#: public/views/status.html
+msgid "Protocol version"
+msgstr "Versión del Protocolo"
+
+#: public/views/status.html
+msgid "Proxy setting"
+msgstr "Opciones de Proxy"
+
+#: public/views/transaction.html
+msgid "Received Time"
+msgstr "Fecha Recibido"
+
+#: public/views/redirect.html
+msgid "Redirecting..."
+msgstr "Redireccionando..."
+
+#: public/views/index.html
+msgid "See all blocks"
+msgstr "Ver todos los bloques"
+
+#: public/views/status.html
+msgid ""
+"Show Transaction Output data\n"
+"          <span data-ng-show=\"txoutLoading\" class=\"glyphicon glyphicon-"
+"refresh icon-rotate\"></span>"
+msgstr ""
+"Ver datos de salida de una transacción\n"
+"          <span data-ng-show=\"txoutLoading\" class=\"glyphicon glyphicon-"
+"refresh icon-rotate\"></span>"
+
+#: public/views/block_list.html public/views/index.html
+#: public/views/transaction.html
+msgid "Size"
+msgstr "Tamaño"
+
+#: public/views/block.html
+msgid "Size (bytes)"
+msgstr "Tamaño (bytes)"
+
+#: public/views/status.html
+msgid "Skipped Blocks (previously synced)"
+msgstr "Bloques saltados (sincronizados previamente)"
+
+#: public/views/status.html
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#: public/views/block.html public/views/transaction.html
+msgid "Summary"
+msgstr "Resúmen"
+
+#: public/views/address.html
+msgid "Summary <small>confirmed</small>"
+msgstr "Resúmen <small>confirmado</small>"
+
+#: public/views/status.html
+msgid "Sync Progress"
+msgstr "Proceso de Sincronización"
+
+#: public/views/status.html
+msgid "Sync Status"
+msgstr "Estado de Sincronización"
+
+#: public/views/status.html
+msgid "Sync Type"
+msgstr "Tipo de Sincronización"
+
+#: public/views/status.html
+msgid "Synced Blocks"
+msgstr "Bloques Sincronizados"
+
+#: public/views/transaction/list.html
+msgid "There are no transactions involving this address."
+msgstr "No hay transacción en esta dirección."
+
+#: public/views/status.html
+msgid "Time Offset"
+msgstr "Time Offset"
+
+#: public/views/block.html public/views/block_list.html
+msgid "Timestamp"
+msgstr "Timestamp"
+
+#: public/views/block_list.html
+msgid "Today"
+msgstr "Hoy"
+
+#: public/views/status.html
+msgid "Total Amount"
+msgstr "Cantidad Total"
+
+#: public/views/address.html
+msgid "Total Received"
+msgstr "Total Recibido"
+
+#: public/views/address.html
+msgid "Total Sent"
+msgstr "Total Enviado"
+
+#: public/views/transaction.html
+msgid "Transaction"
+msgstr "Transacción"
+
+#: public/views/transaction.html
+msgid ""
+"Transaction \n"
+"      <small data-ng-show=\"from_vin || from_vout\">\n"
+"        <span data-ng-show=\"from_vin\">Input</span> \n"
+"        <span data-ng-show=\"from_vout\">Output</span> \n"
+"        <span>{{v_index}}</span>\n"
+"      </small>"
+msgstr ""
+"Transacción \n"
+"      <small data-ng-show=\"from_vin || from_vout\">\n"
+"        <span data-ng-show=\"from_vin\">Input</span> \n"
+"        <span data-ng-show=\"from_vout\">Output</span> \n"
+"        <span>{{v_index}}</span>\n"
+"      </small>"
+
+#: public/views/status.html
+msgid "Transaction Output Set Information"
+msgstr "Salida de Transacción que Establece Información"
+
+#: public/views/status.html
+msgid "Transaction Outputs"
+msgstr "Salidas de una Transacción"
+
+#: public/views/address.html public/views/block.html
+#: public/views/block_list.html public/views/index.html
+#: public/views/status.html
+msgid "Transactions"
+msgstr "Transacciones"
+
+#: public/views/address.html
+msgid "Unconfirmed"
+msgstr "Sin Confirmar"
+
+#: public/views/transaction.html
+msgid "Unconfirmed Transaction!"
+msgstr "¡Transacción sin Confirmar!"
+
+#: public/views/address.html
+msgid "Unconfirmed Txs Balance"
+msgstr "Balance de Transacciones sin Confirmar"
+
+#: public/views/index.html
+msgid "Value Out"
+msgstr "Salida"
+
+#: public/views/block.html public/views/status.html
+msgid "Version"
+msgstr "Versión"
+
+#: public/views/block_list.html
+msgid "Waiting for blocks <span class=\"loader-gif\"></span>"
+msgstr "Esperando bloques <span class=\"loader-gif\"></span>"
+
+#: public/views/index.html
+msgid "Waiting for blocks..."
+msgstr "Esperando bloques..."
+
+#: public/views/index.html
+msgid "Waiting for transactions..."
+msgstr "Esperando transacciones..."
+
+#: public/views/status.html
+msgid "{{sync.syncPercentage}}% Complete"
+msgstr "{{sync.syncPercentage}}% Completo"
+
+#: public/views/transaction.html
+msgid "{{tx.confirmations}} Confirmations"
+msgstr "{{tx.confirmations}} Confirmaciones"
