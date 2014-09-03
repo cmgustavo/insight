@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="insight navbar-brand" href="/">insight</a>
+      <a class="insight navbar-brand" href="/">Bloggus</a>
     </div>
     <div class="navbar-collapse collapse" collapse="$root.isCollapsed">
       <ul class="nav navbar-nav">
@@ -19,7 +19,7 @@
         <div class="form-group" data-ng-class="{'has-error': badQuery}">
           <input id="search" type="text" class="form-control" data-ng-model="q" data-ng-class="{'loading': loading}"  placeholder="Search for block, transaction or address" data-ng-submit="search()">
         </div>
-        <div class="no_matching text-danger" data-ng-show="badQuery">No matching records found!</div>
+        <div translate class="no_matching text-danger" data-ng-show="badQuery">No matching records found!</div>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -37,16 +37,19 @@
         </div>
         &nbsp; &middot;
         <span data-ng-init="getStatus('Info')">
-          <strong>Conn</strong> {{info.connections}}
+          <strong translate>Conn</strong> {{info.connections}}
         </span> &middot;
-        <strong>Height</strong> {{totalBlocks || info.blocks}}
+        <strong translate>Height</strong> {{totalBlocks || info.blocks}}
       </div>
       </li>
       <li>
         <a href="#" data-ng-click="openScannerModal()"><span class="glyphicon glyphicon-qrcode"></span> Scan</a>
       </li>
+      <!--
       <li class="dropdown" data-ng-controller="CurrencyController" data-ng-include="'/views/includes/currency.html'"></li>
+      -->
       </ul>
+      <span translate ng-show="0">Status</span>
     </div>
   </div>
 </div>
