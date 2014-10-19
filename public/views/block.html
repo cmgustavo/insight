@@ -31,7 +31,7 @@
       </a>
     </div>
   </div>
-  <h1 translate>Block #{{block.height}}</h1>
+  <h1><span translate>Block</span> #{{block.height}}</h1>
   <div class="text-muted" data-ng-if="!block.hash">
     <span translate>Loading Block Information</span>  <span class="loader-gif"></span>
   </div>
@@ -72,7 +72,7 @@
             </td>
           </tr>
           <tr>
-            <td><strong translate>Merkle Root</strong></td>
+            <td>Merkle Root</td>
             <td class="text-right text-muted">
               <div class="ellipsis">
                 <span class="btn-copy" clip-copy="block.merkleroot"></span>
