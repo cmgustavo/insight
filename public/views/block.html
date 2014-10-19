@@ -9,7 +9,7 @@
         <div class="col-md-10">
           <div class="row">
             <div class="col-md-5">
-            <h3 translate class="text-left">Block #{{block.height}}</h3>
+              <h3 class="text-left"><span translate>Block</span> #{{block.height}}</h3>
             </div>
             <p class="col-md-6 ellipsis text-left">
                 <strong>Hash</strong> {{block.hash}}
@@ -33,7 +33,7 @@
   </div>
   <h1 translate>Block #{{block.height}}</h1>
   <div class="text-muted" data-ng-if="!block.hash">
-    <span translate>Loading Block Information  <span class="loader-gif"></span>
+    <span translate>Loading Block Information</span>  <span class="loader-gif"></span>
   </div>
   <div data-ng-if="block.hash">
     <div class="well well-sm ellipsis">
@@ -91,23 +91,23 @@
         <table class="table">
           <tbody>
           <tr>
-            <td> <strong translate> Difficulty </strong></td>
+            <td> <strong translate>Difficulty</strong></td>
             <td class="text-right text-muted">{{block.difficulty}}</td>
           </tr>
           <tr>
-            <td> <strong> Bits </strong></td>
+            <td> <strong>Bits</strong></td>
             <td class="text-right text-muted">{{block.bits}}</td>
           </tr>
           <tr>
-            <td> <strong translate> Size (bytes) </strong></td>
+            <td> <strong translate>Size (bytes)</strong></td>
             <td class="text-right text-muted">{{block.size}}</td>
           </tr>
           <tr>
-            <td> <strong translate> Version </strong></td>
+            <td> <strong translate>Version</strong></td>
             <td class="text-right text-muted">{{block.version}}</td>
           </tr>
           <tr>
-            <td> <strong> Nonce </strong></td>
+            <td> <strong>Nonce</strong></td>
             <td class="text-right text-muted">{{block.nonce}}</td>
           </tr>
           <tr data-ng-show="block.nextblockhash">

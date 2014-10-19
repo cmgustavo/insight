@@ -5,7 +5,8 @@
       <div class="block-id">
         <div class="icon-block text-center">
           <span class="glyphicon glyphicon-list"></span>
-          <h3 translate>Blocks <br> mined on:</h3>
+          <h3><span translate>Blocks</span> <br> 
+            <span translate>mined on:</span></h3>
         </div>
       </div>
       <p class="lead text-center m20v">
@@ -28,9 +29,9 @@
     </div>
     <div class="col-xs-12 col-md-9 col-md-offset-3">
       <div class="page-header">
-        <h1 translate>
-          Blocks
-          <small>by date. {{detail}} {{before}}</small>
+        <h1>
+          <span translate>Blocks</span>
+          <small><span translate>by date.</span> {{detail}} {{before}}</small>
         </h1>
       </div>
       <table class="table table-hover table-striped">
@@ -38,14 +39,14 @@
           <tr>
             <th translate>Height</th>
             <th translate>Timestamp</th>
-            <th translate class="text-right">Transactions</th>
-            <th translate class="text-right hidden-xs">Mined by</th>
-            <th translate class="text-right">Size</th>
+            <th class="text-right" translate>Transactions</th>
+            <th class="text-right hidden-xs" translate>Mined by</th>
+            <th class="text-right" translate>Size</th>
           </tr>
         </thead>
         <tbody>
         <tr data-ng-show="loading">
-          <td colspan="5" translate>Waiting for blocks <span class="loader-gif"></span></td>
+          <td colspan="5"><span translate>Waiting for blocks...</span> <span class="loader-gif"></span></td>
         </tr>
         <tr class="fader" data-ng-repeat='b in blocks'>
           <td><a href="/block/{{b.hash}}">{{b.height}}</a></td>
@@ -64,6 +65,7 @@
       </div>
     </div>
   </div>
-  <h2 translate class="text-center text-muted" data-ng-show="!blocks.length && !loading">No blocks yet.</h2>
+  <h2 class="text-center text-muted" data-ng-show="!blocks.length && !loading"
+    translate>No blocks yet.</h2>
 </section>
 

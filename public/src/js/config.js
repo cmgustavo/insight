@@ -48,8 +48,8 @@ angular.module('insight')
     $locationProvider.hashPrefix('!');
   })
   .run(function($rootScope, $route, $location, $routeParams, $anchorScroll, ngProgress, gettextCatalog, amMoment) {
-    gettextCatalog.currentLanguage = 'es';
-    amMoment.changeLanguage('es');
+    gettextCatalog.currentLanguage = defaultLanguage;
+    amMoment.changeLanguage(defaultLanguage);
     $rootScope.$on('$routeChangeStart', function() {
       ngProgress.start();
     });

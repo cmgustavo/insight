@@ -17,9 +17,9 @@
       </a>
     </div>
   </div>
-  <h1>Address <small data-ng-show="address.addrStr">{{$root.currency.getConvertion(address.balance) || address.balance + ' BTC'}}</small></h1>
+  <h1><span translate>Address</span> <small data-ng-show="address.addrStr">{{$root.currency.getConvertion(address.balance) || address.balance + ' BTC'}}</small></h1>
   <div class="text-muted" data-ng-if="!address.addrStr">
-    <span translate>Loading Address Information <span class="loader-gif"></span>
+    <span translate>Loading Address Information</span> <span class="loader-gif"></span>
   </div>
   <div data-ng-if="address.addrStr">
     <div class="well well-sm ellipsis">
@@ -60,11 +60,11 @@
       <table class="table">
         <tbody>
         <tr>
-          <td translate class="small">Unconfirmed Txs Balance</td>
+          <td class="small" translate>Unconfirmed Txs Balance</td>
           <td class="address ellipsis text-right">{{$root.currency.getConvertion(address.unconfirmedBalance)}}</td>
         </tr>
         <tr>
-          <td translate class="small">No. Transactions</td>
+          <td class="small" translate>No. Transactions</td>
           <td class="address ellipsis text-right">{{address.unconfirmedTxApperances}}</td>
         </tr>
 

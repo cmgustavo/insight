@@ -10,10 +10,12 @@
           </div>
       </div>
       <div class="col-md-6 col-lg-5 text-right">
-        <span data-ng-show="tx.confirmations" class="txvalues txvalues-success"
-          translate>{{tx.confirmations}} Confirmations</span>
-        <span data-ng-show="!tx.confirmations" class="txvalues
-          txvalues-danger" translate>Unconfirmed Transaction!</span>
+        <span data-ng-show="tx.confirmations" class="txvalues
+          txvalues-success">{{tx.confirmations}} 
+          <span translate>Confirmations</span>
+        </span>
+        <span data-ng-show="!tx.confirmations" 
+          class="txvalues txvalues-danger" translate>Unconfirmed Transaction!</span>
         <span class="txvalues txvalues-primary">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' BTC' }}</span>
       </div>
     </div>
@@ -25,16 +27,16 @@
     </div>
   </div>
   <div data-ng-if="tx.txid">
-    <h1 translate>Transaction 
+    <h1><span translate>Transaction</span> 
       <small data-ng-show="from_vin || from_vout">
-        <span data-ng-show="from_vin">Input</span> 
-        <span data-ng-show="from_vout">Output</span> 
+        <span data-ng-show="from_vin" translate>Input</span> 
+        <span data-ng-show="from_vout" translate>Output</span> 
         <span>{{v_index}}</span>
       </small>
     </h1>
     <div class="progress progress-striped active" data-ng-if="!tx.txid">
       <div class="progress-bar progress-bar-info" style="width: 100%">
-        <span translate>Loading Transaction Details <span class="loader-gif"></span>
+        <span translate>Loading Transaction Details</span> <span class="loader-gif"></span>
       </div>
     </div>
     <div data-ng-if="tx.txid">
@@ -47,21 +49,21 @@
       <table class="table" style="table-layout: fixed">
         <tbody>
         <tr>
-          <td><strong translate> Size </strong></td>
+          <td><strong translate>Size</strong></td>
           <td class="text-muted text-right">{{tx.size}} (bytes)</td>
         </tr>
         <tr>
-          <td><strong translate>Received Time </strong></td>
+          <td><strong translate>Received Time</strong></td>
           <td data-ng-show="tx.time" class="text-muted text-right">{{tx.time * 1000|date:'medium'}}</td>
           <td data-ng-show="!tx.time" class="text-muted text-right">N/A</td>
         </tr>
         <tr>
-          <td><strong translate>Mined Time </strong></td>
+          <td><strong translate>Mined Time</strong></td>
           <td data-ng-show="tx.time" class="text-muted text-right">{{tx.blocktime * 1000|date:'medium'}}</td>
           <td data-ng-show="!tx.time" class="text-muted text-right">N/A</td>
         </tr>
         <tr>
-          <td><strong translate>Included in Block </strong></td>
+          <td><strong translate>Included in Block</strong></td>
           <td data-ng-show="tx.blockhash" class="text-muted text-right"> 
             <div class="ellipsis">
               <a href="/block/{{tx.blockhash}}">{{tx.blockhash}}</a>
@@ -70,7 +72,7 @@
           <td data-ng-show="!tx.blockhash" class="text-muted text-right">Unconfirmed</td>
         </tr>
         <tr data-ng-show="tx.locktime">
-          <td><strong translate>LockTime </strong></td>
+          <td><strong>LockTime</strong></td>
           <td class="text-muted text-right">{{tx.locktime}}</td>
         </tr>
         <tr data-ng-show="tx.isCoinBase">

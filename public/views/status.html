@@ -1,9 +1,7 @@
 <div data-ng-include src="'/views/includes/connection.html'"></div>
 <section>
   <div class="page-header">
-    <h1 translate>
-      Application Status
-    </h1>
+    <h1 translate>Application Status</h1>
   </div>
   <div id="status" class="row">
 
@@ -16,7 +14,9 @@
             <td>
               <div class="progress">
                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ sync.syncPercentage}}%">
-                  <span data-ng-show="sync.syncPercentage>0" translate>{{sync.syncPercentage}}% Complete</span>
+                  <span data-ng-show="sync.syncPercentage>0">{{sync.syncPercentage}}%
+                    <span translate>Complete</span>
+                  </span>
                 </div>
               </div>
             </td>
@@ -75,10 +75,8 @@
 
       <h2 translate>Transaction Output Set Information</h2>
       <div  data-ng-controller="StatusController">
-        <button data-ng-click="txoutLoading=1;getStatus('TxOutSetInfo')"
-          class="btn btn-default"  data-ng-show="!txoutsetinfo.height"
-          translate> 
-          Show Transaction Output data
+        <button data-ng-click="txoutLoading=1;getStatus('TxOutSetInfo')" class="btn btn-default"  data-ng-show="!txoutsetinfo.height"> 
+          <span translate>Show Transaction Output data</span>
           <span data-ng-show="txoutLoading" class="glyphicon glyphicon-refresh icon-rotate"></span>
         </button > 
 
@@ -148,7 +146,7 @@
             <td class="text-right">{{info.difficulty}}</td>
           </tr>
           <tr>
-            <td>Testnet</td>
+            <td translate>Testnet</td>
             <td class="text-right">{{info.testnet}}</td>
           </tr>
           <tr>
@@ -156,7 +154,7 @@
             <td class="text-right">{{info.proxy}}</td>
           </tr>
           <tr>
-            <td>Info Errors</td>
+            <td translate>Info Errors</td>
             <td class="text-right">{{info.infoErrors}}</td>
           </tr>
         </tbody>
